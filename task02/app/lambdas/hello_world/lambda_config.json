@@ -14,7 +14,8 @@
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
   "url_config": {
-    "url_name": "hello"
+    "url_name": "hello",
+    "auth_type": "AWS_IAM"
   },
   "ephemeral_storage": 512,
   "tags": {}
