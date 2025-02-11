@@ -15,7 +15,12 @@
   "alias": "${lambdas_alias_name}",
   "url_config": {
     "url_name": "hello",
-    "auth_type": "AWS_IAM"
+    "auth_type": "NONE",
+    "cors": {
+      "allow_headers": ["*"],
+      "allow_methods": ["*"],
+      "allow_origins": ["*"]
+    }
   },
   "ephemeral_storage": 512,
   "tags": {}

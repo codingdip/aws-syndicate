@@ -1,5 +1,5 @@
 exports.handler = async (event) => {
-    const { path, method } = event;
+    const { path, method } = event?.requestContext?.http;;
 
     if (path === '/hello' && method === 'GET') {
         return {
