@@ -14,7 +14,6 @@
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
   "url_config": {
-    "url_name": "hello",
     "auth_type": "NONE",
     "cors": {
       "allow_headers": ["*"],
