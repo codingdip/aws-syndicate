@@ -33,6 +33,8 @@ export const handler = async (event) => {
         statusCode: 201,
         body: result
     };
+
+    console.log('response:::', response);
     return response;
 
 };
