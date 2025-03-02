@@ -19,7 +19,7 @@ export const handler = async (event) => {
     }
 
     const command = new PutCommand({
-        TableName : 'cmtr-58d26e25-Events',
+        TableName : process.env.target_table,
         Item: item
     });
 
@@ -34,7 +34,7 @@ export const handler = async (event) => {
         body: result
     };
 
-    console.log('response:::', response);
+    console.log('response:::', process.env.target_table);
     return response;
 
 };
