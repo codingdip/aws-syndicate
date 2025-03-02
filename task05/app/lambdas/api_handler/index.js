@@ -19,7 +19,7 @@ export const handler = async (event) => {
     }
 
     const command = new PutCommand({
-        TableName : 'cmtr-58d26e25-Events-test',
+        TableName : 'cmtr-58d26e25-Events',
         Item: item
     });
 
