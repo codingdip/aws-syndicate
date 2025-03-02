@@ -8,6 +8,7 @@ const docClient = DynamoDBDocumentClient.from(client);
 
 export const handler = async (event) => {
     console.log(event);
+    console.log('response:::', process.env.target_table);
 
     const currentDate = new Date();
 
@@ -34,7 +35,7 @@ export const handler = async (event) => {
         body: result
     };
 
-    console.log('response:::', process.env.target_table);
+
     return response;
 
 };
